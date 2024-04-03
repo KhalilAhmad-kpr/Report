@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PSO Performance Form</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 20px;
+    }
+    .container {
+        max-width: 600px;
+        margin: auto;
+    }
+    .form-group {
+        margin-bottom: 20px;
+    }
+    label {
+        display: block;
+        margin-bottom: 5px;
+    }
+    input[type="number"], input[type="text"], select {
+        width: 100%;
+        padding: 8px;
+        border-radius: 4px;
+        border: 1px solid #ccc;
+        box-sizing: border-box;
+    }
+    button {
+        background-color: #4CAF50;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+    button:hover {
+        background-color: #45a049;
+    }
+</style>
+</head>
+<body>
+<div class="container">
+    <h2>PSO Performance Form</h2>
+    <form id="psoForm" onsubmit="confirmed(); return false;">
+        <div class="form-group">
+            <label for="psoName">PSO Name:</label>
+            <select id="psoName" name="psoName" required>
+                <option value="">Select PSO Name</option>
+                <option value="Ifthikhar">Ifthikhar</option>
+                <option value="Akmal">Akmal</option>
+                <option value="Haji">Haji</option>
+                <option value="Kashif">Kashif</option>
+                <option value="Ayaz">Ayaz</option>
+                <option value="Akram">Akram</option>
+                <option value="Amir">Amir</option>
+                <option value="Shahzad">Shahzad</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="volumeRequired">Volume Required:</label>
+            <input type="number" id="volumeRequired" name="volumeRequired" min="0" required>
+        </div>
+        <div class="form-group">
+            <label for="volumeAchievement">Volume Achievement:</label>
+            <input type="number" id="volumeAchievement" name="volumeAchievement" min="0" required>
+        </div>
+        <div class="form-group">
+            <label for="rgbRequired">RGB Required:</label>
+            <input type="number" id="rgbRequired" name="rgbRequired" min="0" required>
+        </div>
+        <div class="form-group">
+            <label for="rgbAchievement">RGB Achievement:</label>
+            <input type="number" id="rgbAchievement" name="rgbAchievement" min="0" required>
+        </div>
+        <div class="form-group">
+            <label for="icRequired">IC Required:</label>
+            <input type="number" id="icRequired" name="icRequired" min="0" required>
+        </div>
+        <div class="form-group">
+            <label for="icAchievement">IC Achievement:</label>
+            <input type="number" id="icAchievement" name="icAchievement" min="0" required>
+        </div>
+        <div class="form-group">
+            <label for="penetrationBoxes">Penetration Boxes:</label>
+            <input type="number" id="penetrationBoxes" name="penetrationBoxes" min="0" required>
+        </div>
+        <div class="form-group">
+            <label for="improvementPercentage">Improvement Percentage:</label>
+            <input type="number" id="improvementPercentage" name="improvementPercentage" min="0" max="100" required>
+        </div>
+        <div class="form-group">
+            <label for="red">RED:</label>
+            <input type="number" id="red" name="red" min="0" required>
+        </div>
+        <div class="form-group">
+            <label for="newOutlets">New Outlets:</label>
+            <input type="number" id="newOutlets" name="newOutlets" min="0" required>
+        </div>
+        <div class="form-group">
+            <label for="zeroSale">Zero Sale:</label>
+            <input type="number" id="zeroSale" name="zeroSale" min="0" required>
+        </div>
+        <div class="form-group">
+            <label for="inefficient">Inefficient:</label>
+            <input type="number" id="inefficient" name="inefficient" min="0" required>
+        </div>
+        <div class="form-group">
+            <label for="callCompletion">Call Completion:</label>
+            <input type="number" id="callCompletion" name="callCompletion" min="0" max="100" required>
+        </div>
+        <div class="form-group">
+            <label for="strikeRate">Strike Rate:</label>
+            <input type="number" id="strikeRate" name="strikeRate" min="0" max="100" required>
+        </div>
+        <button type="submit">Submit</button>
+    </form>
+</div>
+
+<script src="formValidation.js"></script>
+</body>
+</html>
